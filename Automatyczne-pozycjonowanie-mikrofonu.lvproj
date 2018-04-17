@@ -14,7 +14,10 @@
 		<Item Name="main_states.ctl" Type="VI" URL="../mainVIs/main_states.ctl"/>
 		<Item Name="main_states_2.ctl" Type="VI" URL="../mainVIs/main_states_2.ctl"/>
 		<Item Name="output_config.vi" Type="VI" URL="../mainVIs/output_config.vi"/>
+		<Item Name="pionowy.vi" Type="VI" URL="../mainVIs/pionowy.vi"/>
+		<Item Name="poziomy.vi" Type="VI" URL="../mainVIs/poziomy.vi"/>
 		<Item Name="timer.vi" Type="VI" URL="../mainVIs/timer.vi"/>
+		<Item Name="timer2.vi" Type="VI" URL="../mainVIs/timer2.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
