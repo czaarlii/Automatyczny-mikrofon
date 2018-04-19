@@ -10,12 +10,14 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Akcje.ctl" Type="VI" URL="../mainVIs/Akcje.ctl"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="main_states.ctl" Type="VI" URL="../mainVIs/main_states.ctl"/>
 		<Item Name="main_states_2.ctl" Type="VI" URL="../mainVIs/main_states_2.ctl"/>
 		<Item Name="output_config.vi" Type="VI" URL="../mainVIs/output_config.vi"/>
 		<Item Name="pionowy.vi" Type="VI" URL="../mainVIs/pionowy.vi"/>
 		<Item Name="poziomy.vi" Type="VI" URL="../mainVIs/poziomy.vi"/>
+		<Item Name="stany.ctl" Type="VI" URL="../mainVIs/poziomyVIs/stany.ctl"/>
 		<Item Name="timer.vi" Type="VI" URL="../mainVIs/timer.vi"/>
 		<Item Name="timer2.vi" Type="VI" URL="../mainVIs/timer2.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -63,6 +65,8 @@
 			<Item Name="liblinxdevice.dll" Type="Document" URL="liblinxdevice.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="timer-pion.vi" Type="VI" URL="../mainVIs/pionowyVIs/timer-pion.vi"/>
+			<Item Name="timer-poz.vi" Type="VI" URL="../mainVIs/poziomyVIs/timer-poz.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
