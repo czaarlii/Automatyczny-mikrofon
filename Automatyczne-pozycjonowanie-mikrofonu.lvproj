@@ -10,16 +10,20 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Akcje.ctl" Type="VI" URL="../mainVIs/Akcje.ctl"/>
+		<Item Name="Akcja_kontrolki.ctl" Type="VI" URL="../mainVIs/Akcja_kontrolki.ctl"/>
+		<Item Name="Akcje_wczytywania_danych_do_ruchu.ctl" Type="VI" URL="../mainVIs/wczytajDaneDoRuchuVIs/Akcje_wczytywania_danych_do_ruchu.ctl"/>
+		<Item Name="Dioda_lista.ctl" Type="VI" URL="../mainVIs/diodyVIs/Dioda_lista.ctl"/>
+		<Item Name="diody.vi" Type="VI" URL="../mainVIs/diody.vi"/>
+		<Item Name="konfiguracjaDanychLINX.vi" Type="VI" URL="../mainVIs/wykonajRuchVIs/konfiguracjaDanychLINX.vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="main_states.ctl" Type="VI" URL="../mainVIs/main_states.ctl"/>
-		<Item Name="main_states_2.ctl" Type="VI" URL="../mainVIs/main_states_2.ctl"/>
-		<Item Name="output_config.vi" Type="VI" URL="../mainVIs/output_config.vi"/>
-		<Item Name="pionowy.vi" Type="VI" URL="../mainVIs/pionowy.vi"/>
-		<Item Name="poziomy.vi" Type="VI" URL="../mainVIs/poziomy.vi"/>
-		<Item Name="stany.ctl" Type="VI" URL="../mainVIs/poziomyVIs/stany.ctl"/>
-		<Item Name="timer.vi" Type="VI" URL="../mainVIs/timer.vi"/>
-		<Item Name="timer2.vi" Type="VI" URL="../mainVIs/timer2.vi"/>
+		<Item Name="pionowy.vi" Type="VI" URL="../mainVIs/wykonajRuchVIs/pionowy.vi"/>
+		<Item Name="poziomy.vi" Type="VI" URL="../mainVIs/wykonajRuchVIs/poziomy.vi"/>
+		<Item Name="przyciski.vi" Type="VI" URL="../mainVIs/przyciski.vi"/>
+		<Item Name="przyciski_lista.ctl" Type="VI" URL="../mainVIs/przyciskiVIs/przyciski_lista.ctl"/>
+		<Item Name="RuchPionowy.ctl" Type="VI" URL="../mainVIs/wykonajRuchVIs/pionowyVIs/RuchPionowy.ctl"/>
+		<Item Name="RuchPoziomy.ctl" Type="VI" URL="../mainVIs/wykonajRuchVIs/poziomyVIs/RuchPoziomy.ctl"/>
+		<Item Name="wczytajDaneDoRuchu.vi" Type="VI" URL="../mainVIs/wczytajDaneDoRuchu.vi"/>
+		<Item Name="wykonajRuch.vi" Type="VI" URL="../mainVIs/wykonajRuch.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -65,8 +69,8 @@
 			<Item Name="liblinxdevice.dll" Type="Document" URL="liblinxdevice.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="timer-pion.vi" Type="VI" URL="../mainVIs/pionowyVIs/timer-pion.vi"/>
-			<Item Name="timer-poz.vi" Type="VI" URL="../mainVIs/poziomyVIs/timer-poz.vi"/>
+			<Item Name="timerRuchuPionowego.vi" Type="VI" URL="../mainVIs/wykonajRuchVIs/pionowyVIs/timerRuchuPionowego.vi"/>
+			<Item Name="timerRuchuPoziomego.vi" Type="VI" URL="../mainVIs/wykonajRuchVIs/poziomyVIs/timerRuchuPoziomego.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
