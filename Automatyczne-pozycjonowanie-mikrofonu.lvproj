@@ -102,6 +102,7 @@ AddOutputFilter chunkFilter
 		<Item Name="przyciski_lista.ctl" Type="VI" URL="../mainVIs/przyciskiVIs/przyciski_lista.ctl"/>
 		<Item Name="RuchPionowy.ctl" Type="VI" URL="../mainVIs/wykonajRuchVIs/pionowyVIs/RuchPionowy.ctl"/>
 		<Item Name="RuchPoziomy.ctl" Type="VI" URL="../mainVIs/wykonajRuchVIs/poziomyVIs/RuchPoziomy.ctl"/>
+		<Item Name="Stan_glowny.ctl" Type="VI" URL="../mainVIs/Stan_glowny.ctl"/>
 		<Item Name="timerRuchuPionowego.vi" Type="VI" URL="../mainVIs/wykonajRuchVIs/pionowyVIs/timerRuchuPionowego.vi"/>
 		<Item Name="timerRuchuPoziomego.vi" Type="VI" URL="../mainVIs/wykonajRuchVIs/poziomyVIs/timerRuchuPoziomego.vi"/>
 		<Item Name="wczytajDaneDoRuchu.vi" Type="VI" URL="../mainVIs/wczytajDaneDoRuchu.vi"/>
