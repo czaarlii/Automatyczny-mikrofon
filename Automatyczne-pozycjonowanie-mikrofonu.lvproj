@@ -10,20 +10,10 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Akcja_kontrolki.ctl" Type="VI" URL="../mainVIs/Akcja_kontrolki.ctl"/>
-		<Item Name="Akcje_wczytywania_danych_do_ruchu.ctl" Type="VI" URL="../mainVIs/wczytajDaneDoRuchuVIs/Akcje_wczytywania_danych_do_ruchu.ctl"/>
-		<Item Name="Dioda_lista.ctl" Type="VI" URL="../mainVIs/diodyVIs/Dioda_lista.ctl"/>
-		<Item Name="diody.vi" Type="VI" URL="../mainVIs/diody.vi"/>
-		<Item Name="konfiguracjaDanychLINX.vi" Type="VI" URL="../mainVIs/wykonajRuchVIs/konfiguracjaDanychLINX.vi"/>
+		<Item Name="mainVIs" Type="Folder" URL="../mainVIs">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-		<Item Name="pionowy.vi" Type="VI" URL="../mainVIs/wykonajRuchVIs/pionowy.vi"/>
-		<Item Name="poziomy.vi" Type="VI" URL="../mainVIs/wykonajRuchVIs/poziomy.vi"/>
-		<Item Name="przyciski.vi" Type="VI" URL="../mainVIs/przyciski.vi"/>
-		<Item Name="przyciski_lista.ctl" Type="VI" URL="../mainVIs/przyciskiVIs/przyciski_lista.ctl"/>
-		<Item Name="RuchPionowy.ctl" Type="VI" URL="../mainVIs/wykonajRuchVIs/pionowyVIs/RuchPionowy.ctl"/>
-		<Item Name="RuchPoziomy.ctl" Type="VI" URL="../mainVIs/wykonajRuchVIs/poziomyVIs/RuchPoziomy.ctl"/>
-		<Item Name="wczytajDaneDoRuchu.vi" Type="VI" URL="../mainVIs/wczytajDaneDoRuchu.vi"/>
-		<Item Name="wykonajRuch.vi" Type="VI" URL="../mainVIs/wykonajRuch.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -69,15 +59,13 @@
 			<Item Name="liblinxdevice.dll" Type="Document" URL="liblinxdevice.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="timerRuchuPionowego.vi" Type="VI" URL="../mainVIs/wykonajRuchVIs/pionowyVIs/timerRuchuPionowego.vi"/>
-			<Item Name="timerRuchuPoziomego.vi" Type="VI" URL="../mainVIs/wykonajRuchVIs/poziomyVIs/timerRuchuPoziomego.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="Raspberry Pi 2 B" Type="Raspberry Pi 2 B">
 		<Property Name="alias.name" Type="Str">Raspberry Pi 2 B</Property>
-		<Property Name="alias.value" Type="Str">169.254.233.103</Property>
-		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;LINX_DEVICE,True;LINX_DEVICE_FAMILY,4;LINX_DEVICE_ID,3;TARGET_TYPE,RT;</Property>
+		<Property Name="alias.value" Type="Str">192.168.0.102</Property>
+		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,ARM;LINX_DEVICE,True;LINX_DEVICE_FAMILY,4;LINX_DEVICE_ID,3;</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
@@ -113,6 +101,34 @@
 		<Property Name="target.server.vi.access" Type="Str">+*</Property>
 		<Property Name="target.server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.vi.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="target.WebServer.Config" Type="Str">Listen 8000
+
+NI.ServerName default
+DocumentRoot "$LVSERVER_DOCROOT"
+TypesConfig "$LVSERVER_CONFIGROOT/mime.types"
+DirectoryIndex index.htm
+WorkerLimit 10
+InactivityTimeout 60
+
+LoadModulePath "$LVSERVER_MODULEPATHS"
+LoadModule LVAuth lvauthmodule
+LoadModule LVRFP lvrfpmodule
+
+#
+# Pipeline Definition
+#
+
+SetConnector netConnector
+
+AddHandler LVAuth
+AddHandler LVRFP
+
+AddHandler fileHandler ""
+
+AddOutputFilter chunkFilter
+
+
+</Property>
 		<Property Name="target.WebServer.Enabled" Type="Bool">false</Property>
 		<Property Name="target.WebServer.LogEnabled" Type="Bool">false</Property>
 		<Property Name="target.WebServer.LogPath" Type="Path">/c/ni-rt/system/www/www.log</Property>
@@ -123,7 +139,56 @@
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="mainVIs" Type="Folder" URL="../mainVIs">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
+				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
+				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
+				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
+				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
+				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
+				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
+				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
+				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
+				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
+				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
+				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="LMH-LINX.lvlib" Type="Library" URL="/&lt;vilib&gt;/MakerHub/LINX/LMH-LINX.lvlib"/>
+				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
+				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Reset myRIO.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Utilities/vis/Reset myRIO.vi"/>
+				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
+				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
+				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
+				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="Smart Open.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Onboard IO/DIO/vis/Smart Open.vi"/>
+				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
+				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
+				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
+				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
+				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
+				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Write.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Instrument Drivers/Onboard IO/DIO/vis/Write.vi"/>
+			</Item>
+			<Item Name="liblinxdevice.dll" Type="Document" URL="liblinxdevice.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
