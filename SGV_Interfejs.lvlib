@@ -13,7 +13,7 @@
 		<Property Name="typedefName2" Type="Str">WejsciaParametry.ctl</Property>
 		<Property Name="typedefPath1" Type="PathRel">../glownaMaszynaStanowVIs/wczytajListePunktowVIs/RodzajPomiarow.ctl</Property>
 		<Property Name="typedefPath2" Type="PathRel">../interfejsVIs/WejsciaVIs/WejsciaParametry.ctl</Property>
-		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%&amp;!1%!!"1!A!!!!!!+!!J!)12-26&gt;0!!!+1#%&amp;5&amp;*"6U]!#E!B"%&gt;05E%!!!B!)1.%4UQ!#E!B"&amp;.U&lt;X!!!!J!)164&gt;'&amp;S&gt;!!31#%-5(*B9W%A=G6D?GZB!!!-1#%'3W^N&lt;X*B!!"/!0%!!!!!!!!!!2*3&lt;W2[97J1&lt;WVJ98*P&gt;SZD&gt;'Q!-U!7!!%838JP&lt;'&amp;D?7JO&lt;ZTG)%&amp;L&gt;8.U?7.[&lt;G%!$V*P:(JB;C"Q&lt;WVJ98*P&gt;Q""!0%!!!!!!!!!!228:7JT9WFB5'&amp;S97VF&gt;(*Z,G.U&lt;!!E1&amp;!!#1!!!!%!!A!$!!1!"1!'!!=!#!&gt;$&lt;(6T&gt;'6S!!%!#1!!!!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%E)!%!!"1!A!!!!!!,!!J!)12-26&gt;0!!!+1#%&amp;5&amp;*"6U]!#E!B"%&gt;05E%!!!B!)1.%4UQ!%E!B$&amp;"S97.B)(*F9XJO91!!#E!B"&amp;.U&lt;X!!!!J!)164&gt;'&amp;S&gt;!!-1#%'3W^N&lt;X*B!!!-1#%(6XFK=W.J:1"?!0%!!!!!!!!!!2*3&lt;W2[97J1&lt;WVJ98*P&gt;SZD&gt;'Q!1U!7!!%H38JP&lt;'&amp;D?7JO&lt;ZTG)%&amp;L&gt;8.U?7.[&lt;G%A5%YN25YA36.0)$%Q-41Q!!^3&lt;W2[97IA='^N;7&amp;S&lt;X=!1Q$R!!!!!!!!!!%56W6K=W.J96"B=G&amp;N:82S?3ZD&gt;'Q!*E"1!!I!!!!"!!)!!Q!%!!5!"A!(!!A!#1&gt;$&lt;(6T&gt;'6S!!%!#A!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 	<Item Name="WyjsciaInterfejsu" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Network</Property>
