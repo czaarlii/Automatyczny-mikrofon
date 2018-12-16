@@ -250,7 +250,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{BF0DB9C1-7AF0-4854-A815-7157CDCE58BB}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">14</Property>
+				<Property Name="Bld_version.build" Type="Int">20</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -261,41 +261,25 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{D35D68ED-3CCF-4333-985E-7907ECA4991C}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{419445E1-C0C8-45DC-9D92-C8C2432CEBF0}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
-				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/Raspberry Pi 3 B/Automatyczny-mikrofon/glownaMaszynaStanowVIs</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">Container</Property>
-				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
-				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Raspberry Pi 3 B/Automatyczny-mikrofon/glownaMaszynaStanow.vi</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/Raspberry Pi 3 B/Automatyczny-mikrofon/interfejsVIs</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[2].type" Type="Str">Container</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/Raspberry Pi 3 B/Automatyczny-mikrofon/inicjalizacja.vi</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/Raspberry Pi 3 B/Automatyczny-mikrofon/glownaMaszynaStanow.vi</Property>
-				<Property Name="Source[3].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/Raspberry Pi 3 B/Automatyczny-mikrofon/interfejsRaspberryPi.vi</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/Raspberry Pi 3 B/Automatyczny-mikrofon/inicjalizacja.vi</Property>
-				<Property Name="Source[4].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/Raspberry Pi 3 B/Automatyczny-mikrofon/koniec.vi</Property>
 				<Property Name="Source[4].type" Type="Str">VI</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/Raspberry Pi 3 B/Automatyczny-mikrofon/interfejsRaspberryPi.vi</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/Raspberry Pi 3 B/Automatyczny-mikrofon/main.vi</Property>
 				<Property Name="Source[5].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[5].type" Type="Str">VI</Property>
-				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/Raspberry Pi 3 B/Automatyczny-mikrofon/koniec.vi</Property>
-				<Property Name="Source[6].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[6].type" Type="Str">VI</Property>
-				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/Raspberry Pi 3 B/Automatyczny-mikrofon/main.vi</Property>
-				<Property Name="Source[7].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[7].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">8</Property>
+				<Property Name="SourceCount" Type="Int">6</Property>
 				<Property Name="TgtF_companyName" Type="Str">Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Mikrofonowa maszyna stanow</Property>
 				<Property Name="TgtF_internalName" Type="Str">Mikrofonowa maszyna stanow</Property>
