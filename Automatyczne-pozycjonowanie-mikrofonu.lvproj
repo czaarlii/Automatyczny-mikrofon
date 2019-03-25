@@ -82,31 +82,31 @@
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Automatyczne Statywy Interfejs PC" Type="EXE">
+			<Item Name="Automatyczne Pozycjonowanie Mikrofonów - Interfejs PC" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{77B22F23-0582-4E0E-BAC7-F54B6BDFED02}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{0511333A-EB3B-4892-8EA7-1C73BC36B391}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{AEB1AE3B-E862-4347-A2AC-18F02993766A}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Automatyczne Statywy Interfejs PC</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Automatyczne Pozycjonowanie Mikrofonów - Interfejs PC</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Automatyczne Statywy Interfejs PC</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Automatyczne Pozycjonowanie Mikrofonów - Interfejs PC</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D9DF32E9-207D-49D3-982F-821ECC0C7A72}</Property>
-				<Property Name="Bld_version.build" Type="Int">6</Property>
+				<Property Name="Bld_version.build" Type="Int">17</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">interfejs.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Automatyczne Statywy Interfejs PC/interfejs.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">pozycjonowanie.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Automatyczne Pozycjonowanie Mikrofonów - Interfejs PC/pozycjonowanie.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Automatyczne Statywy Interfejs PC/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Automatyczne Pozycjonowanie Mikrofonów - Interfejs PC/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E48C413B-48D8-49C2-A5DC-61BF7E0E26CA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E5B0CF97-2403-4688-A66F-951922773873}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Automatyczny-mikrofon/interfejsPC.vi</Property>
@@ -114,12 +114,12 @@
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_companyName" Type="Str">Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Automatyczne Statywy Interfejs PC</Property>
-				<Property Name="TgtF_internalName" Type="Str">Automatyczne Statywy Interfejs PC</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Automatyczne Pozycjonowanie Mikrofonów - Interfejs PC</Property>
+				<Property Name="TgtF_internalName" Type="Str">Automatyczne Pozycjonowanie Mikrofonów - Interfejs PC</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2018 Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie</Property>
-				<Property Name="TgtF_productName" Type="Str">Automatyczne Statywy Interfejs PC</Property>
+				<Property Name="TgtF_productName" Type="Str">Automatyczne Pozycjonowanie Mikrofonów - Interfejs PC</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{42DA6D86-10FD-4F05-B273-A832A8156846}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">interfejs.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">pozycjonowanie.exe</Property>
 			</Item>
 		</Item>
 	</Item>
@@ -290,7 +290,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{BF0DB9C1-7AF0-4854-A815-7157CDCE58BB}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">33</Property>
+				<Property Name="Bld_version.build" Type="Int">38</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
